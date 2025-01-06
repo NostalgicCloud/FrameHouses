@@ -1,0 +1,50 @@
+name: FramedHouses
+version: '${project.version}'
+main: nostalgic.cloud.framedhouses.FramedHouses
+api-version: '1.21'
+commands:
+  sf:
+    description: 'starts the animation'
+    usage: '/sf'
+    permission: 'framedhouses.base'
+    aliases: [saveframe]
+  tog:
+    description: 'toggle animation your build'
+    usage: '/tog'
+    permission: 'framedhouses.Admin'
+    aliases: [toggle]
+  set1:
+    description: 'Sets the first corner of the region'
+    usage: '/set1'
+    permission: 'framedhouses.base'
+    aliases: [setY1]
+  set2:
+    description: 'Sets the second corner of the region'
+    usage: '/set2'
+    permission: 'framedhouses.base'
+    aliases: [setY2]
+  list:
+    description: 'List all animations'
+    usage: '/list'
+    permission: 'framedhouses.base'
+    aliases: [fhlist]
+  edit:
+    description: 'Edit An Animation In Your Name'
+    usage: '/edit'
+    permission: 'framedhouses.base'
+    aliases: [fhedit]
+  delete:
+    description: 'Delete An Animation In Your Name'
+    usage: '/FHD'
+    permission: 'framedhouses.base'
+    aliases: [del]
+  enable:
+    description: 'Enable an Animation'
+    usage: '/enable'
+    permission: 'framedhouses.base'
+    aliases: [fhen]
+  disable:
+    description: 'Disable an Animation'
+    usage: '/disable'
+    permission: 'framedhouses.base'
+    aliases: [fhdis]
